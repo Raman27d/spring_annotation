@@ -7,16 +7,24 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan("com.stackroute.domain")
 public class SpringConfiguration {
 
     @Bean
-    public Actor getActorBean() {
-        return new Actor("Keanu Reeves","Male",22);
+    public Actor actor() {
+        return new Actor("Raman","Male",22);
     }
 
     @Bean
-    public Movie getMovieBean() {
-        return new Movie(getActorBean());
+    public Actor getActorBean2() {
+        return new Actor("Raj","Male",30);
     }
+
+    @Bean
+    public Actor getActorBean3() {
+        return new Actor("Rajesh","Female",28);
+    }
+
+
 
 }
