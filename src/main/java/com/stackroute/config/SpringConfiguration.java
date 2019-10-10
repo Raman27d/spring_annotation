@@ -12,19 +12,12 @@ public class SpringConfiguration {
 
     @Bean
     public Actor actor() {
-        return new Actor("Raman","Male",22);
+        return new Actor("Salman","Male",52);
     }
 
     @Bean
-    public Actor getActorBean2() {
-        return new Actor("Raj","Male",30);
+    public Actor actor2() {
+        return new Actor("Anshuman","Male",38);
     }
-
-    @Bean
-    public Actor getActorBean3() {
-        return new Actor("Rajesh","Female",28);
-    }
-
-
 
 }
